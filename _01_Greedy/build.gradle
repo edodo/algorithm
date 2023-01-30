@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id("org.springframework.boot") version "3.0.2"
+
 }
 
 group 'org.example'
@@ -15,4 +17,7 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+springBoot {
+    mainClass.set("org.example.Main")
 }
